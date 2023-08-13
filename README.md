@@ -79,6 +79,8 @@
 
 
 <h4> I also added a window at the bottom of the window with the ability to enter text as notes. </h4>
+![Screenshot](https://github.com/egidijus78/egidijus78/blob/main/img/calculator%20yellow.jpg)
+
 
 
 
