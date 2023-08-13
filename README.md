@@ -10,8 +10,9 @@
 
 
 
-<h2 align="center"> Kalkuliatoriaus projektas </h2>
-<h4 align="center"> </h4>
+<h2 align="center"> Calculator project </h2>
+
+<h4> </h4> </h4>
 
 
 
