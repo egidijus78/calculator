@@ -39,6 +39,42 @@
 
 <h4> I tried what else can be added to this calculator, I added a combobox with the ability to change background color and added eleven colors. 
 
+![Screenshot](https://github.com/egidijus78/egidijus78/blob/main/img/combobox2.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h4> I have added a digital clock with date, day of the week, month.</h4>
 
 <h4> I also added the weather forecast for now in my city Vilnius. Unfortunately the screen of the calculator and window itself ar not able to place extensive information about the weather and other parameters. </h4>
