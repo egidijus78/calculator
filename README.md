@@ -57,6 +57,16 @@
 
 <h4> I have added a digital clock with date, day of the week, month.</h4>
 
+![Screenshot](https://github.com/egidijus78/egidijus78/blob/main/img/clock%20date%20temperature.jpg)
+
+
+
+
+
+
+
+
+
 <h4> I also added the weather forecast for now in my city Vilnius. Unfortunately the screen of the calculator and window itself ar not able to place extensive information about the weather and other parameters. </h4>
 
 ![Screenshot](https://github.com/egidijus78/egidijus78/blob/main/img/openweathermap.jpg)
