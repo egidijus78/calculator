@@ -1,12 +1,12 @@
 # Importuoju paketą tkinter skirtą darbui su biblioteka Tk
 # importuoju instrumentą Pmw skirtą widgets ir megawidgets sukūrimui
 # importuoju modulį darbui su laiku time
+# importuoju modulį darbui su užklausomis
 import tkinter
-import tkinter as tk
 from tkinter import *
 import Pmw
 import time
-from tkinter import ttk
+import requests
 
 # Sukuriu langą window
 window = Tk()
@@ -117,12 +117,12 @@ combo = Pmw.ComboBox(window1, labelpos = N,
 combo.grid(row = 6, rowspan = 1, column = 0,columnspan = 5, padx = 1, pady = 1, ipadx = 0, ipady = 0, sticky = N)
 
 
-# Paleidžiu funkciją kuri išveda esamą laiką ir formatuoja jį į stringą
+# Paleidžiu funkciją kuri išveda esamą laiką ir formatuoja jį į stringą, nustatau laiko atvaizdavimo formatą
 # panaikinu laikrodžio lango antraštės tekstą
-# iškviečiu gettime funkciją kas sekundę, kad gauti esamą laiką
+# iškviečiu gettime funkciją kas sekundę(time delay of 1000 milliseconds), kad gauti esamą laiką
 def gettime():
-    timestr = time.strftime("%H:%M:%S")
-    lb.configure(text = timestr)
+    timestring = time.strftime("%H:%M:%S \n %A \n %d %B")
+    lb.configure(text = timestring)
     window.after(1000, gettime)
 
 
@@ -131,13 +131,51 @@ def gettime():
 # nustatau jo išdėstymą pagal eilučių, stulpelių  ideksus, kiek eilučių, stulpelių turi užimti elementas,
 # išorinės paraštes, vidines paraštes, elemento išlyginimo kryptį
 lb = tkinter.Label(window, text = "", bg = "Salmon", fg = "#171717", bd = "0.4m",
-                   font = ("Courier", 9), relief = GROOVE, cursor = "draft_large")
+                   font = ("Courier", 7), relief = GROOVE, cursor = "draft_large")
 
 lb.grid(row = 0, rowspan = 1, column = 3, columnspan = 1, padx = 0,
         pady = 0, ipadx = 0, ipady = 0, sticky = W)
 
-#Paleidžiu laikrodžio atvaizdavimą
+# Paleidžiu laikrodžio atvaizdavimą
 gettime()
+
+# Nurodau miestą
+city = 'Vilnius'
+# Formuoju užklausą
+url = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&units=metric&lang=ru&appid=79d1ca96933b0328e1c7e3e7a26cb347'
+# Siunčiu užklausą į serverį ir iškart gaunu atsakymą
+weather_data = requests.get(url).json()
+# gaunu duomenis apie temperatūrą
+# išvedu reikšmes į ekraną
+temperature = round(weather_data['main']['temp'])
+temperature_feels = round(weather_data['main']['feels_like'])
+print('Now weather', city, str(temperature), '°C')
+print('Temperature feels', str(temperature_feels), '°C')
+
+# Paleidžiu funkciją kuri išveda esamą oro temperatūrą
+# iškviečiu gettemperature funkciją kas sekundę kad gauti esamą oro temperatūrą
+def gettemperature():
+    lb2.configure(text=temperature)
+    window.after(1000, gettemperature)
+
+
+# Sukuriu užrašo langą viduje kalkuliatoriaus ekrano,
+# nustatau jo background spalvą, simbolių spalvą, rėmelio dydį milimetrais, fontą, dydį, reljefą
+# nustatau jo išdėstymą pagal eilučių, stulpelių  ideksus, kiek eilučių, stulpelių turi užimti elementas,
+# išorinės paraštes, vidines paraštes, elemento išlyginimo kryptį
+lb2 = tkinter.Label(window, text = "\n", bg = "Salmon", fg = "#171717", bd = "0.4m",
+                   font = ("Courier", 9), relief = GROOVE, cursor = "draft_large")
+
+lb2.grid(row = 0, rowspan = 1, column = 2, columnspan = 1, padx = 1,
+        pady = 1, ipadx = 5, ipady = 10, sticky = E)
+gettemperature()
+
+lb3 = tkinter.Label(window, text = "c", bg = "Salmon", fg = "#171717", bd = "0.3m",
+                   font = ("Courier", 7), relief = GROOVE, cursor = "draft_large")
+
+lb3.grid(row = 0, rowspan = 1, column = 2, columnspan = 1, padx = 0,
+        pady = 0, ipadx = 0, ipady = 0, sticky = E)
+
 
 # Sukūriau antrą ekraną programos apačioje, nustačiau jo spalvą, simbolių spalvą, rėmelio dydį, reljefą
 # nustačiau jo išdėstymą pagal eilučių, stulpelių  ideksus, kiek eilučių, stulpelių turi užimti elementas,
