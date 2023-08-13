@@ -1,3 +1,2 @@
-<h1 align="center">Hi there, I'm Egidijus</a> 
-<img src="https://github.com/egidijus78/egidijus78/raw/main/images/Hi.gif" height="32"/></h1>
+<h2 align="center">Hi there, I'm Egidijus</a> height="32"/></h2>
 <h3 align="center">Python student from Lithuania </h3>
