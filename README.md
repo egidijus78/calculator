@@ -12,7 +12,10 @@
 
 <h2 align="center"> Calculator project </h2>
 
+![Screenshot](https://raw.githubusercontent.com/egidijus78/egidijus78/main/img/calculator81497.ico)
+
 <h4> This is my first step trying to program in Python. The project was conceived as learning and testing the possibilities of tkinter package as part of Python and its functionality. The idea of this project was to create a transparent graphic calculator, unfortunately tkinter does not provide the ability to make function keys transparent, it's not meant for that. So I had to compromise, I made the calculator screen frame and background transparent and functional parts with a permanent color.</h4> 
+
 
 ![Screenshot](https://github.com/egidijus78/egidijus78/blob/main/img/calculator%20permanent0.jpg)
 
