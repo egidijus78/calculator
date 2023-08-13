@@ -8,8 +8,8 @@
 
 
 
-<h4 align="center">Hi there, I'm Egidijus</a>
-<h4 align="center">Python student from Lithuania </h4>
+<h3 Kalkuliatoriaus projektas </h3>
+<h4 align="center"> </h4>
 
 
 
