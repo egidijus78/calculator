@@ -10,7 +10,7 @@
 
 
 
-<h3 Kalkuliatoriaus projektas </h3>
+<h3 align="center"> Kalkuliatoriaus projektas </h3>
 <h4 align="center"> </h4>
 
 
