@@ -122,7 +122,7 @@
 
 
 
-      Import the tkinter package for working with the Tk library
+     Import the tkinter package for working with the Tk library
      Import the Pmw tool for creating widgets and megawidgets
      Import a module for working with time
      Import a module for working with requests
@@ -155,7 +155,7 @@ window.columnconfigure(index = 1, weight = 0)
 window.rowconfigure(index = 1, weight = 0)
 ```
 
-     Changing the window size --->
+     Changing the window size
      
 ```
 window.resizable(width = False, height = False)
