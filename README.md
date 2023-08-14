@@ -121,19 +121,26 @@
 
 
 
-<!---Import the tkinter package for working with the Tk library--->
-<!---Import the Pmw tool for creating widgets and megawidgets--->
-<!---Import a module for working with time--->
-<!---Import a module for working with requests--->
+<!---
+Import the tkinter package for working with the Tk library
+Import the Pmw tool for creating widgets and megawidgets
+Import a module for working with time
+Import a module for working with requests
+--->
      
-```import tkinter
+```
+import tkinter
 from tkinter import *
 import Pmw
 import time
-import requests``` 
+import requests
+``` 
 
     <!---Create a main window--->
-```window = Tk()```
+    
+```
+window = Tk()
+```
 
     # Remove the title bar of the window
     # window.overrideredirect(True)
