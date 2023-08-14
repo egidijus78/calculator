@@ -121,7 +121,7 @@
 
 
 
-<!-- TO DO: add more details about me later -->
+
     
      Import the tkinter package for working with the Tk library    
      Import the Pmw tool for creating widgets and megawidgets
