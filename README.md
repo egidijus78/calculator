@@ -126,11 +126,11 @@
      # Import a module for working with time
      # Import a module for working with requests
      
-```import tkinter```
-```from tkinter import *```
-```import Pmw```
-```import time```
-```import requests``` 
+```import tkinter
+from tkinter import *
+import Pmw
+import time
+import requests``` 
 
      # Create a main window
 ```window = Tk()```
