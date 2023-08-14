@@ -125,11 +125,12 @@
 <h4>  <!--- Import the Pmw tool for creating widgets and megawidgets ---> </h4>
      # Import a module for working with time
      # Import a module for working with requests
-<h4> ```import tkinter
-from tkinter import *
-import Pmw
-import time
-import requests``` </h4>
+     
+```import tkinter```
+```from tkinter import *```
+```import Pmw```
+```import time```
+```import requests``` 
 
      # Create a main window
 ```window = Tk()```
