@@ -119,7 +119,7 @@
 <h3> Comprehensive description of the program: </h3>
 
 <h4>  <!--- Import the tkinter package for working with the Tk library --->
-     # Import the Pmw tool for creating widgets and megawidgets
+      <!--- Import the Pmw tool for creating widgets and megawidgets --->
      # Import a module for working with time
      # Import a module for working with requests
 import tkinter
