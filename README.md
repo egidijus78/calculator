@@ -145,7 +145,7 @@ window.geometry("{}x{}+{}+{}".format(264, 560, 600, 250))
 window.columnconfigure(index = 1, weight = 0)
 window.rowconfigure(index = 1, weight = 0)
 
-   # Changing the window size 
+  <!--- # Changing the window size --->
 window.resizable(width = False, height = False)
    # change the window icon
 window.iconbitmap("calculator81497.ico")
