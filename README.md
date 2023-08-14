@@ -122,10 +122,12 @@
 
 
 
-     _ _ Import the tkinter package for working with the Tk library_ _     
+     _ _
+     Import the tkinter package for working with the Tk library    
      Import the Pmw tool for creating widgets and megawidgets
      Import a module for working with time
      Import a module for working with requests
+     _ _ 
 
      
 ```
