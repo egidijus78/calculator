@@ -121,10 +121,10 @@
 
 
 
-<h4>  <!--- Import the tkinter package for working with the Tk library ---> </h4>
-<h4>  <!--- Import the Pmw tool for creating widgets and megawidgets ---> </h4>
-     # Import a module for working with time
-     # Import a module for working with requests
+<!---Import the tkinter package for working with the Tk library--->
+<!---Import the Pmw tool for creating widgets and megawidgets--->
+<!---Import a module for working with time--->
+<!---Import a module for working with requests--->
      
 ```import tkinter
 from tkinter import *
