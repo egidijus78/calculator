@@ -132,7 +132,7 @@ import Pmw
 import time
 import requests``` 
 
-     # Create a main window
+    <!---Create a main window--->
 ```window = Tk()```
 
     # Remove the title bar of the window
