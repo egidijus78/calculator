@@ -147,8 +147,11 @@ window.rowconfigure(index = 1, weight = 0)
 
   <!--- # Changing the window size --->
 window.resizable(width = False, height = False)
+
+
    # change the window icon
 window.iconbitmap("calculator81497.ico")
+
 
    # set the background color
 window.configure(bg = "#4A7A8C")
